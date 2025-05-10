@@ -16,7 +16,7 @@ use crate::primitive_types::{FlatType, JoinFlatTypes};
 /// Allows converting between the current flat layout and the joined `Target` flat layout, which
 /// may be longer or have some elements wider than the current elements.
 pub trait JoinFlatLayouts<Target> {
-    /// Converts the current flat layout into a the joined `Target` flat layout.
+    /// Converts the current flat layout into the joined `Target` flat layout.
     fn into_joined(self) -> Target;
 
     /// Converts from the joined `Target` flat layout into the current flat layout.
